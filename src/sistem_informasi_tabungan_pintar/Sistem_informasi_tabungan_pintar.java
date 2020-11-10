@@ -132,17 +132,24 @@ public class Sistem_informasi_tabungan_pintar {
                 Muriasetya07194_jangkawaktuterkumpul2=target/menabung;
                 switch (sekalamenabung){
                     case 1 :
-                       if(target==Muriasetya07194_jangkawaktuterkumpul1*menabung){
+                       if(target==Muriasetya07194_jangkawaktuterkumpul1*menabung && Muriasetya07194_jangkawaktuterkumpul1 <=30){
                         System.out.println(target+" akan terkumpul dalam jangka waktu "+Muriasetya07194_jangkawaktuterkumpul1+" hari\n");
                         Muriasetya07194_bulan = 0;
                         Muriasetya07194_kurang = 0;
                         Muriasetya07194_jangkawaktuterkumpul2 = 0;
                         datatabungan.add(new Muriasetya07194_DataTabunganEntity(Muriasetya07194_jangkawaktuterkumpul1,Muriasetya07194_jangkawaktuterkumpul2,Muriasetya07194_bulan,Muriasetya07194_kurang,target,menabung,sekalamenabung));
-                    }else{
-                        System.out.println(target+" akan terkumpul dalam jangka waktu "+Muriasetya07194_jangkawaktuterkumpul1+" hari\n");
-                        Muriasetya07194_kurang=target-(Muriasetya07194_jangkawaktuterkumpul1*menabung);
-                        System.out.println("Dengan catatan dihari terakhir, menabung "+Muriasetya07194_kurang+menabung);
+                    }else if (target==Muriasetya07194_jangkawaktuterkumpul1*menabung && Muriasetya07194_jangkawaktuterkumpul1 >30 && Muriasetya07194_jangkawaktuterkumpul1 <365){
+                        Muriasetya07194_jangkawaktuterkumpul1 = Muriasetya07194_jangkawaktuterkumpul1/30;
+                        System.out.println(target+" akan terkumpul dalam jangka waktu "+Muriasetya07194_jangkawaktuterkumpul1+" bulan\n");
                         Muriasetya07194_bulan = 0;
+                        Muriasetya07194_kurang = 0;
+                        Muriasetya07194_jangkawaktuterkumpul2 = 0;
+                        datatabungan.add(new Muriasetya07194_DataTabunganEntity(Muriasetya07194_jangkawaktuterkumpul1,Muriasetya07194_jangkawaktuterkumpul2,Muriasetya07194_bulan,Muriasetya07194_kurang,target,menabung,sekalamenabung));
+                    }else if (target==Muriasetya07194_jangkawaktuterkumpul1*menabung && Muriasetya07194_jangkawaktuterkumpul1 >365){
+                        Muriasetya07194_jangkawaktuterkumpul2 = Muriasetya07194_jangkawaktuterkumpul1/365;
+                        Muriasetya07194_bulan = (Muriasetya07194_jangkawaktuterkumpul1-365)/30;
+                        System.out.println(target+" akan terkumpul dalam jangka waktu "+Muriasetya07194_jangkawaktuterkumpul2+" tahun "+ Muriasetya07194_bulan+" bulan\n");
+                        Muriasetya07194_kurang = 0;
                         datatabungan.add(new Muriasetya07194_DataTabunganEntity(Muriasetya07194_jangkawaktuterkumpul1,Muriasetya07194_jangkawaktuterkumpul2,Muriasetya07194_bulan,Muriasetya07194_kurang,target,menabung,sekalamenabung));
                     }
                     break;
