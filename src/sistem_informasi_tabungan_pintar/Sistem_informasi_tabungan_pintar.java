@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class Sistem_informasi_tabungan_pintar {
 
-    static ArrayList<Muriasetya07194_DataPenggunaEntity> user = new ArrayList();
-    static ArrayList<Muriasetya07194_DataTabunganEntity> datatabungan = new ArrayList();
-    static Scanner muriasetya07194_input=new Scanner(System.in);
+     ArrayList<Muriasetya07194_DataPenggunaEntity> user = new ArrayList();
+     ArrayList<Muriasetya07194_DataTabunganEntity> datatabungan = new ArrayList();
+     Scanner muriasetya07194_input=new Scanner(System.in);
     public static void main(String[] args) {
-       int muriasetya07194_pil;
+        Sistem_informasi_tabungan_pintar data = new Sistem_informasi_tabungan_pintar();
+        int muriasetya07194_pil;
         do{
         System.out.println("1. Daftar Akun ");
         System.out.println("2. Login ");
@@ -16,56 +17,56 @@ public class Sistem_informasi_tabungan_pintar {
         System.out.println("4. Update Email ");
         System.out.println("5. EXIT ");
         System.out.print("pilih = ");
-         muriasetya07194_pil=muriasetya07194_input.nextInt();
+         muriasetya07194_pil=data.muriasetya07194_input.nextInt();
         switch(muriasetya07194_pil){
             case 1:
-                muriasetya07194_daftar();
+                data.muriasetya07194_daftar();
                 break;
             case 2:
                 System.out.print("Email = ");
-                String Muriasetya07194_Email=muriasetya07194_input.next();
+                String Muriasetya07194_Email=data.muriasetya07194_input.next();
                 System.out.print("Password = ");
-                String Muriasetya07194_Password=muriasetya07194_input.next();
-                muriasetya07194_menuutama(Muriasetya07194_Email,Muriasetya07194_Password);              
+                String Muriasetya07194_Password=data.muriasetya07194_input.next();
+                data.muriasetya07194_menuutama(Muriasetya07194_Email,Muriasetya07194_Password);              
                 break;
             case 3: 
                 System.out.print("Data sebelum dihapus \n");
-                for (int a=0; a<user.size();a++){
-                    System.out.println("Nama = "+user.get(a).getMuriasetya07194_Nama());
-                    System.out.println("Target Menabung = "+datatabungan.get(a).getTarget());
-                    System.out.println("Email = "+user.get(a).getMuriasetya07194_Email());
+                for (int a=0; a<data.user.size();a++){
+                    System.out.println("Nama = "+data.user.get(a).getMuriasetya07194_Nama());
+                    System.out.println("Target Menabung = "+data.datatabungan.get(a).getTarget());
+                    System.out.println("Email = "+data.user.get(a).getMuriasetya07194_Email());
                     System.out.println(" ");
                 }
                 System.out.println("Nama yang dihapus");
-                String Muriasetya07194_Nama=muriasetya07194_input.next();
-                Muriasetya07194_hapusnama(Muriasetya07194_Nama);
+                String Muriasetya07194_Nama=data.muriasetya07194_input.next();
+                data.Muriasetya07194_hapusnama(Muriasetya07194_Nama);
                 System.out.println(" ");
                 System.out.println("Data sesudah dihapus \n");
-                for (int a=0; a<user.size();a++){
-                    System.out.println("Nama = "+user.get(a).getMuriasetya07194_Nama());
-                    System.out.println("Target Menabung = "+datatabungan.get(a).getTarget());
-                    System.out.println("Email = "+user.get(a).getMuriasetya07194_Email());
+                for (int a=0; a<data.user.size();a++){
+                    System.out.println("Nama = "+data.user.get(a).getMuriasetya07194_Nama());
+                    System.out.println("Target Menabung = "+data.datatabungan.get(a).getTarget());
+                    System.out.println("Email = "+data.user.get(a).getMuriasetya07194_Email());
                     System.out.println(" ");
                 }
                 break;
             case 4:
                 System.out.print("Data sebelum diupdate \n");
-                for (int a=0; a<user.size();a++){
-                    System.out.println("Nama = "+user.get(a).getMuriasetya07194_Nama());
-                    System.out.println("Target Menabung = "+datatabungan.get(a).getTarget());
-                    System.out.println("Email = "+user.get(a).getMuriasetya07194_Email());
+                for (int a=0; a<data.user.size();a++){
+                    System.out.println("Nama = "+data.user.get(a).getMuriasetya07194_Nama());
+                    System.out.println("Target Menabung = "+data.datatabungan.get(a).getTarget());
+                    System.out.println("Email = "+data.user.get(a).getMuriasetya07194_Email());
                     System.out.println(" ");
                 }
                 System.out.print("Nama = ");
-                String Muriasetya07194_Nama1=muriasetya07194_input.next();
+                String Muriasetya07194_Nama1=data.muriasetya07194_input.next();
                 System.out.print("Masukan Email = ");
-                String Muriasetya07194_Email1=muriasetya07194_input.next();
-                Muriasetya07194_update(Muriasetya07194_Nama1,Muriasetya07194_Email1);
+                String Muriasetya07194_Email1=data.muriasetya07194_input.next();
+                data.Muriasetya07194_update(Muriasetya07194_Nama1,Muriasetya07194_Email1);
                 System.out.print("Data setelah diupdate \n");
-                for (int a=0; a<user.size();a++){
-                    System.out.println("Nama = "+user.get(a).getMuriasetya07194_Nama());
-                    System.out.println("Target Menabung = "+datatabungan.get(a).getTarget());
-                    System.out.println("Email = "+user.get(a).getMuriasetya07194_Email());
+                for (int a=0; a<data.user.size();a++){
+                    System.out.println("Nama = "+data.user.get(a).getMuriasetya07194_Nama());
+                    System.out.println("Target Menabung = "+data.datatabungan.get(a).getTarget());
+                    System.out.println("Email = "+data.user.get(a).getMuriasetya07194_Email());
                     System.out.println(" ");
                 }
                 break;
@@ -73,7 +74,7 @@ public class Sistem_informasi_tabungan_pintar {
         }while(muriasetya07194_pil!=5);
     }
     // MASUKKAN DATA --> CASE 1
-    static void muriasetya07194_daftar(){
+    void muriasetya07194_daftar(){
         System.out.print("Nama = ");
         String Muriasetya07194_Nama=muriasetya07194_input.next();
         System.out.print("Jenis Kelamin = ");
@@ -85,13 +86,13 @@ public class Sistem_informasi_tabungan_pintar {
         user.add(new Muriasetya07194_DataPenggunaEntity(Muriasetya07194_Email,Muriasetya07194_Password,Muriasetya07194_JenisKelamin,Muriasetya07194_Nama));    
     }
     // UPDATE EMAIL --> CASE 4
-    static void Muriasetya07194_update (String Muriasetya07194_Nama,String Muriasetya07194_Email){
+    void Muriasetya07194_update (String Muriasetya07194_Nama,String Muriasetya07194_Email){
         if (Muriasetya07194_carinama(Muriasetya07194_Nama)!=-1){
             user.get(Muriasetya07194_carinama(Muriasetya07194_Nama)).Muriasetya07194_Email=Muriasetya07194_Email;
         }
     }
     
-    static int Muriasetya07194_carinama(String Muriasetya07194_Nama){
+    int Muriasetya07194_carinama(String Muriasetya07194_Nama){
         int index = -1;
         for (int a=0; a<user.size(); a++){
             if (Muriasetya07194_Nama.equals(user.get(a).getMuriasetya07194_Nama())){
@@ -101,11 +102,11 @@ public class Sistem_informasi_tabungan_pintar {
         return index;
     }
     // HAPUS NAMA --> CASE 3
-    static void Muriasetya07194_hapusnama(String Muriasetya07194_Nama){
+    void Muriasetya07194_hapusnama(String Muriasetya07194_Nama){
         user.remove(Muriasetya07194_carinama(Muriasetya07194_Nama));
     }
     // HITUNG TABUNGAN --> CASE 2
-    static void muriasetya07194_menuutama(String Muriasetya07194_Email,String Muriasetya07194_Password){
+    void muriasetya07194_menuutama(String Muriasetya07194_Email,String Muriasetya07194_Password){
         int Muriasetya07194_jangkawaktuterkumpul1,Muriasetya07194_jangkawaktuterkumpul2,Muriasetya07194_bulan,Muriasetya07194_kurang;
         for(int a=0;a<user.size();a++){
             if(Muriasetya07194_Email.equals(user.get(a).getMuriasetya07194_Email())&&Muriasetya07194_Password.equals(user.get(a).getMuriasetya07194_Password())){
@@ -180,7 +181,7 @@ public class Sistem_informasi_tabungan_pintar {
                 }
                 break;
             }else{
-                System.out.println("Email atau Password Salah");
+                System.out.println(" ");
             }
         }
     }
