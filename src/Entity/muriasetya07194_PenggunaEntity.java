@@ -1,14 +1,14 @@
 package Entity;
-public class muriasetya07194_DataPenggunaEntity {
+public class muriasetya07194_PenggunaEntity {
     String muriasetya07194_email,muriasetya07194_nama,muriasetya07194_password,muriasetya07194_jeniskelamin;
-public muriasetya07194_DataPenggunaEntity(String muriasetya07194_email, String muriasetya07194_nama, String muriasetya07194_password, String muriasetya07194_jeniskelamin) {
+public muriasetya07194_PenggunaEntity(String muriasetya07194_email, String muriasetya07194_nama, String muriasetya07194_password, String muriasetya07194_jeniskelamin) {
         this.muriasetya07194_email = muriasetya07194_email;
         this.muriasetya07194_nama = muriasetya07194_nama;
         this.muriasetya07194_password = muriasetya07194_password;
         this.muriasetya07194_jeniskelamin = muriasetya07194_jeniskelamin;
     }
 
-    public muriasetya07194_DataPenggunaEntity() {
+    public muriasetya07194_PenggunaEntity() {
     }
     
     public String getmuriasetya07194_Email() {

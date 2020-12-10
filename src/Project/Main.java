@@ -5,9 +5,9 @@ import java.util.Calendar;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 public class Main {
-       private muriasetya07194_DataTabunganPintarModel muriasetya07194_datatabunganModel=new muriasetya07194_DataTabunganPintarModel();
+       private muriasetya07194_TabunganPintarModel muriasetya07194_datatabunganModel=new muriasetya07194_TabunganPintarModel();
        private Scanner input=new Scanner(System.in);
-       private muriasetya07194_DataPenggunaModel muriasetya07194_datapenggunaModel=new muriasetya07194_DataPenggunaModel();
+       private muriasetya07194_PenggunaModel muriasetya07194_datapenggunaModel=new muriasetya07194_PenggunaModel();
        private SimpleDateFormat sdf= new SimpleDateFormat("dd-MM-yyyy");
        private Calendar tgl = Calendar.getInstance();
        
@@ -79,12 +79,12 @@ public class Main {
                             System.out.println("Tanggal Menabung = "+sdf.format(tgl.getTime()));
                             tgl.add(Calendar.DATE, muriasetya07194_jangkawaktuterkumpul1);
                             System.out.println("Tabungan Terkumpul = "+sdf.format(tgl.getTime()));
-                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_DataTabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
+                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_TabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
                         }else {
                             System.out.println("Tanggal Menabung = "+sdf.format(tgl.getTime()));
                             tgl.add(Calendar.DATE, muriasetya07194_jangkawaktuterkumpul1);
                             System.out.println("Tabungan Terkumpul = "+sdf.format(tgl.getTime())); 
-                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_DataTabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
+                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_TabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
                         }
                         break;
                     case 2:
@@ -92,12 +92,12 @@ public class Main {
                             System.out.println("Tanggal Menabung = "+sdf.format(tgl.getTime()));
                             tgl.add(Calendar.DATE, muriasetya07194_jangkawaktuterkumpul1*30);
                             System.out.println("Tabungan Terkumpul = "+sdf.format(tgl.getTime())); 
-                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_DataTabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
+                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_TabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
                     }else{
                             System.out.println("Tanggal Menabung = "+sdf.format(tgl.getTime()));
                             tgl.add(Calendar.DATE, muriasetya07194_jangkawaktuterkumpul1*30);
                             System.out.println("Tabungan Terkumpul = "+sdf.format(tgl.getTime())); 
-                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_DataTabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
+                            muriasetya07194_datatabunganModel.InsertDataTabunganPintar(new muriasetya07194_TabunganPintarEntity(muriasetya07194_jangkawaktuterkumpul1,muriasetya07194_target,muriasetya07194_menabung,muriasetya07194_sekalamenabung));
                     }            
                 }
             }  
@@ -111,7 +111,7 @@ public class Main {
          String muriasetya07194_Email=input.next();          
          System.out.print("Masukan Password = ");
          String muriasetya07194_Password=input.next();
-         muriasetya07194_datapenggunaModel.InsertDataPengguna(new muriasetya07194_DataPenggunaEntity(muriasetya07194_Email,muriasetya07194_nama,muriasetya07194_Password,muriasetya07194_jeniskelamin)); 
+         muriasetya07194_datapenggunaModel.InsertDataPengguna(new muriasetya07194_PenggunaEntity(muriasetya07194_Email,muriasetya07194_nama,muriasetya07194_Password,muriasetya07194_jeniskelamin)); 
         } 
       }
 

@@ -1,14 +1,14 @@
 package Model;
 
-import Entity.muriasetya07194_DataPenggunaEntity;
+import Entity.muriasetya07194_PenggunaEntity;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class muriasetya07194_DataPenggunaModel implements ModelInterfaces {
-    private ArrayList<muriasetya07194_DataPenggunaEntity> muriasetya07194_datapenggunaEntityArrayList;
+public class muriasetya07194_PenggunaModel implements ModelInterfaces {
+    private ArrayList<muriasetya07194_PenggunaEntity> muriasetya07194_datapenggunaEntityArrayList;
     private Scanner input=new Scanner(System.in);
 
-    public muriasetya07194_DataPenggunaModel() {
-        muriasetya07194_datapenggunaEntityArrayList= new ArrayList<muriasetya07194_DataPenggunaEntity>();
+    public muriasetya07194_PenggunaModel() {
+        muriasetya07194_datapenggunaEntityArrayList= new ArrayList<muriasetya07194_PenggunaEntity>();
     }
     
     @Override
@@ -71,7 +71,7 @@ public class muriasetya07194_DataPenggunaModel implements ModelInterfaces {
        }
        return indeks;
    }
-      public void InsertDataPengguna(muriasetya07194_DataPenggunaEntity muriasetya07194_dataPenggunaEntity){
+      public void InsertDataPengguna(muriasetya07194_PenggunaEntity muriasetya07194_dataPenggunaEntity){
           muriasetya07194_datapenggunaEntityArrayList.add(muriasetya07194_dataPenggunaEntity);
       }
 }
