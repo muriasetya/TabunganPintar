@@ -9,20 +9,27 @@ public class muriasetya07194_TabunganPintarEntity {
         this.muriasetya07194_sekalamenabung = muriasetya07194_sekalamenabung;
     }
 
-    public int getmuriasetya07194_jangkawaktuterkumpul1() {
+    
+    
+    public muriasetya07194_TabunganPintarEntity() {
+	}
+
+
+
+	public int getJangkawaktuterkumpul1() {
         return muriasetya07194_jangkawaktuterkumpul1;
     }
-
-    public int getmuriasetya07194_target() {
+    public int getmuriasetya07194_Target() {
         return muriasetya07194_target;
     }
 
-    public int getmuriasetya07194_menabung() {
+    public int getmuriasetya07194_Menabung() {
         return muriasetya07194_menabung;
     }
 
-    public int getmuriasetya07194_sekalamenabung() {
+    public int getmuriasetya07194_Sekalamenabung() {
         return muriasetya07194_sekalamenabung;
     }
+    
 
 }

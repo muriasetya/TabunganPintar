@@ -3,15 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Main/muriasetya07194_Main.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Entity/muriasetya07194_PenggunaEntity.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Controller/muriasetya07194_ControllerInterface.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Entity/muriasetya07194_TabunganPintarEntity.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Model/muriasetya07194_TabunganPintarModel.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Controller/muriasetya07194_UserController.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Model/muriasetya07194_PenggunaModel.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Model/ModelInterfaces.java</file>
-            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt%202/dosen/SistemInformasiTabunganPintar/src/Controller/muriasetya07194_AllObjectController.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Entity/muriasetya07194_PenggunaEntity.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Project/muriasetya07194_Main.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Controller/muriasetya07194_AllObjectModel.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Controller/muriasetya07194_ControllerInterfaces.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Controller/muriasetya07194_PenggunaController.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Model/muriasetya07194_PenggunaModel.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Model/muriasetya07194_TabunganPintarModel.java</file>
+            <file>file:/F:/PRAKTIKUM%20PBO%20Modul%203/Projekt/uji%20coba/sistem_informasi_tabungan_pintar/src/Entity/muriasetya07194_mahasiswa.java</file>
         </group>
     </open-files>
 </project-private>
