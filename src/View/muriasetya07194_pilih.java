@@ -9,7 +9,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import javax.swing.table.DefaultTableModel;
 
-public class muriasetya07194_pilih extends muriasetya07194_komponen{
+public class muriasetya07194_pilih extends JFrame{
+    private JButton btnsatu = new JButton(" view ");
+    private JButton btndua = new JButton(" menabung ");
     public muriasetya07194_pilih() {
         pilih();
     }

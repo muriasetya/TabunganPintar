@@ -11,8 +11,29 @@ import java.awt.color.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class muriasetya07194_GUI extends muriasetya07194_komponen{
-    boolean cekjeniskelamin;
+public class muriasetya07194_GUI extends JFrame{
+   private JRadioButton laki = new JRadioButton("Laki-laki");
+   private JRadioButton perempuan = new JRadioButton("Perempuan");
+   private JRadioButton laki2 = new JRadioButton("Laki-laki");
+   private JRadioButton perempuan2 = new JRadioButton("Perempuan");
+   private JTextField txtnama = new JTextField();
+   private JTextField txtNPM = new JTextField();
+   private JPasswordField txtpassword = new JPasswordField();
+   private JTextField txtnama2 = new JTextField();
+   private JTextField txtNPM2 = new JTextField();
+   private JButton btnInsert = new JButton(" Daftar ");
+   private JButton btnlogin = new JButton(" login ");
+   private JLabel labelnama = new JLabel("Masukkan Nama : ");
+   private JLabel labelNPM = new JLabel("Masukkan NPM : ");
+   private JLabel labelpassword = new JLabel("Masukkan Password  : ");
+   private JLabel sambutan = new JLabel("Sistem Informasi Tabungan Pintar");
+   private JLabel header = new JLabel("Daftar Akun");
+   private JLabel header2 = new JLabel("Login Akun");
+   private JLabel labelnama2 = new JLabel("Masukkan Nama : ");
+   private JLabel labelNPM2 = new JLabel("Masukkan NPM : ");
+   private JLabel labelpassword2 = new JLabel("Masukkan Password  : ");;
+   private JPasswordField txtpassword2 = new JPasswordField();
+   boolean cekjeniskelamin;
     public muriasetya07194_GUI() {
         initComponent();
     }

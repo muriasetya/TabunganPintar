@@ -10,9 +10,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import javax.swing.table.DefaultTableModel;
 
-public class muriasetya07194_PenggunaGUI extends muriasetya07194_komponen {
-    private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-    private Calendar calendar1 = Calendar.getInstance();
+public class muriasetya07194_PenggunaGUI extends JFrame {
+    private JLabel datauser = new JLabel("Data Pengguna");
+    private JTextArea datausertabungan = new JTextArea();
+    private JTextArea datausertabungan2 = new JTextArea();
+    private JButton btnhapus = new JButton(" hapus ");
+    private JButton btnupdate = new JButton(" update ");
+    private JButton btnback = new JButton(" << Kembali ");
     int muriasetya07194_targetnabung,muriasetya07194_nominal,muriasetya07194_jangkawaktuterkumpul1;
     public muriasetya07194_PenggunaGUI() {
         init();
@@ -77,13 +81,8 @@ public class muriasetya07194_PenggunaGUI extends muriasetya07194_komponen {
                     });
 
 
-        add(datauser);
-        add(datausertabungan);
-        add(btnback);
-        add(btnhapus);
-        add(btnupdate);
-        add(btnreset);   
-        add(datausertabungan2);
+        add(datauser); add(datausertabungan); add(btnback);
+        add(btnhapus); add(btnupdate); add(datausertabungan2);
 
     }
     String datauser(){

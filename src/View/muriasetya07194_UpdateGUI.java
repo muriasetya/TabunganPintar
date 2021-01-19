@@ -6,7 +6,14 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class muriasetya07194_UpdateGUI extends muriasetya07194_komponen {
+public class muriasetya07194_UpdateGUI extends JFrame {
+    private JLabel headerupdate = new JLabel("Update Password");
+    private JLabel carinama = new JLabel("Masukkan nama ");
+    private JTextField txtnamaupdate = new JTextField();
+    private JLabel passbaru = new JLabel("Masukkan Password Baru ");
+    private JTextField txtpudatepass = new JTextField();
+    private JButton btnselesaiupdate = new JButton(" Selesai ");
+    private JButton btnbackupdate = new JButton(" << Kembali ");
     String nama,password;
     int index =0;
     public muriasetya07194_UpdateGUI(){
@@ -55,12 +62,7 @@ public class muriasetya07194_UpdateGUI extends muriasetya07194_komponen {
                      }
                 });
 
-        add(carinama);
-        add(headerupdate);
-        add(txtnamaupdate);
-        add(passbaru);
-        add(txtpudatepass);
-        add(btnselesaiupdate);
-        add(btnbackupdate);
+        add(carinama); add(headerupdate); add(txtnamaupdate); add(passbaru);
+        add(txtpudatepass); add(btnselesaiupdate); add(btnbackupdate);
     }
 }

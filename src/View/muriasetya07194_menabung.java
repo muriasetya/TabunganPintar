@@ -9,9 +9,19 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import javax.swing.table.DefaultTableModel;
 
-public class muriasetya07194_menabung extends muriasetya07194_komponen{
+public class muriasetya07194_menabung extends JFrame{
     private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
     private Calendar calendar1 = Calendar.getInstance();
+    private JLabel targetmenabung = new JLabel("Masukkan Target menabung");
+    private JLabel nominal = new JLabel("Masukkan nominal menabung");
+    private JTextField txttargetmenabung = new JTextField();
+    private JTextField txtnominal = new JTextField();
+    private JButton btnsubmit = new JButton(" SUBMIT ");
+    private JRadioButton perhari = new JRadioButton("Perhari");
+    private JRadioButton perbulan = new JRadioButton("Perbulan");
+    private JTextArea tglterkumpul = new JTextArea();
+    private JTextArea tglmasuk = new JTextArea();
+    private JButton btntiga = new JButton(" kembali ");
     int muriasetya07194_targetnabung,muriasetya07194_nominal,muriasetya07194_jangkawaktuterkumpul1;
     public muriasetya07194_menabung() {
         menabung();
@@ -133,19 +143,8 @@ public class muriasetya07194_menabung extends muriasetya07194_komponen{
                      }   
             }
         });
-        add(targetmenabung);
-        add(txttargetmenabung);
-        add(nominal);
-        add(txtnominal);
-        add(btnsubmit);
-        add(perhari);
-        add(perbulan);
-        add(tglterkumpul);
-        add(btnback);
-        add(btnhapus);
-        add(btnupdate);
-        add(tglmasuk);
-        add(btnreset);
-        add(btntiga);
+        add(targetmenabung); add(txttargetmenabung); add(nominal); add(txtnominal);
+        add(btnsubmit); add(perhari); add(perbulan); add(tglterkumpul);
+        add(tglmasuk); add(btntiga);
     }
 }

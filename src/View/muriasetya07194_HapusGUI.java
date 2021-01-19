@@ -4,7 +4,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Font;
 
-public class muriasetya07194_HapusGUI extends muriasetya07194_komponen{
+public class muriasetya07194_HapusGUI extends JFrame{
+    
+    private JLabel headerhapus = new JLabel("Hapus Data");
+    private JTextField txtnamahapus = new JTextField();
+    private JButton btnselesauhapus = new JButton(" Selesai ");
+    private JButton btnbackhapus = new JButton(" << Kembali ");
+    private JLabel namadihapus = new JLabel("Masukkan nama yang akan dihapus");
     String name;
     public muriasetya07194_HapusGUI(){
         HapusGUI();
@@ -47,10 +53,7 @@ public class muriasetya07194_HapusGUI extends muriasetya07194_komponen{
                         }  
                      }
                 });
-        add(headerhapus);
-        add(namadihapus);
-        add(txtnamahapus);
-        add(btnselesauhapus);
-        add(btnbackhapus);
+        add(headerhapus); add(namadihapus); add(txtnamahapus);
+        add(btnselesauhapus); add(btnbackhapus);
     }
 }
